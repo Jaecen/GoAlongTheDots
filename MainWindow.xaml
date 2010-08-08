@@ -1,0 +1,13 @@
+﻿<Window x:Class="GoAlongTheDots.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Go Along The Dots" Height="350" Width="525" WindowState="Maximized" Loaded="Window_Loaded" KeyUp="Window_KeyUp">
+    <Window.Resources>
+        <BitmapImage x:Key="Creature" UriSource="media/creature.png" />
+        <BitmapImage x:Key="Dot" UriSource="media/dot.png" />
+        <BitmapImage x:Key="Circle" UriSource="media/circle.png" />
+    </Window.Resources>
+    <Canvas Name="Container">
+        <TextBlock Name="tbCreatureCoords" Canvas.Top="10" Canvas.Right="10" />
+    </Canvas>
+</Window>
